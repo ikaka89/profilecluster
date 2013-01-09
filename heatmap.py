@@ -23,7 +23,6 @@ cm = m.colors.LinearSegmentedColormap('my_colormap', cdict, 1024)
 
 data=np.genfromtxt(open("output/Cluster4.mat"),delimiter="\t")
 
-print data[0,:]
 
 fig = plt.figure()
 #plt.gray()
