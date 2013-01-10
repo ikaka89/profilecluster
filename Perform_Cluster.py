@@ -29,10 +29,8 @@ def main():
         fromclus=stack[-1]
         bic=Clustering.BIC(activeclusters, distrimat)
         print len(activeclusters),bic,len(minbicclus),minbic
-        
-        #if len(activeclusters) == 46: 
-        #if len(activeclusters) == 5:
-        if int(bic) < int(minbic) and len(activeclusters)<600:  
+        #if int(bic) < int(minbic) and len(activeclusters)<600:
+        if len(activeclusters) == 1: 
             minbicclus=[]
             for i in xrange(len(activeclusters)):
                 minbicclus.extend([activeclusters[i]])
