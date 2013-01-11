@@ -21,13 +21,13 @@ cm = m.colors.LinearSegmentedColormap('my_colormap', cdict, 1024)
 #                                                             ,36,37,38,39,40,41,42,43,44,45,46,47
 #                                                             ,48,49,50,51,52,53,54,55,56,57,58,59,70,71,72,73,74,75,76,77,78,79,80),delimiter="\t")
 
-data=np.genfromtxt(open("output/Cluster4.mat"),delimiter="\t")
+data=np.genfromtxt(open("output/Cluster4_random.mat"),delimiter="\t")
 
 
 fig = plt.figure()
 #plt.gray()
-#plt.pcolormesh(data,cmap=plt.get_cmap("flag"))
-plt.pcolormesh(data[:,1:],cmap=cm)
+plt.pcolormesh(data,cmap=cm)
+#plt.pcolormesh(data[:,1:],cmap=cm)
 #plt.pcolormesh(data[:,1:],cmap=cm)
 plt.colorbar() 
-plt.savefig('Cluster_4_heatmap.png')
+plt.savefig('Cluster_4_random_heatmap.png')
